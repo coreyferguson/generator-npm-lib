@@ -24,7 +24,7 @@ module.exports = generators.Base.extend({
       type: 'input',
       name: 'appName',
       message: 'Your library name:',
-      default: 'cliify-test',
+      default: 'npm-lib-test',
       store: false,
       validate: function(input) {
         if (input !== null && input !== undefined &&
@@ -38,7 +38,7 @@ module.exports = generators.Base.extend({
       type: 'input',
       name: 'appDescription',
       message: 'Short description:',
-      default: 'Test cliify project',
+      default: 'Test npm-lib project',
       store: false,
       validate: function(input) {
         if (input !== null && input !== undefined && input !== '') return true;

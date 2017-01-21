@@ -1,11 +1,11 @@
 
-# Cliify, Yeoman Generator
+# Npm Lib, Yeoman Generator
 
 ## Usage
 
 ```bash
-npm install -g yo generator-cliify
-yo cliify
+npm install -g yo generator-npm-lib
+yo npm-lib
 cd my-project
 npm install
 npm test
@@ -13,20 +13,15 @@ npm test
 
 ## Features
 
-- Hierarchical configuration with files, environment variables, command-line arguments, and atomic object merging; [nconf][]
-- Prompt for missing/sensitive arguments; [Inquirer.js][]
 - ES5 + ES6 source; [Babel][]
 - Unit testing, integration testing, mocking, code coverage; [Mocha][], [Chai][], [Sinon.JS][], [Istanbul][]
 - Version controlled; [Release It!][]
 - JavaScript style enforcement; [JSCS][]
 
-[Babel]: https://babeljs.io/
 [Chai]: http://chaijs.com/
-[Inquirer.js]: https://github.com/SBoudrias/Inquirer.js
 [Istanbul]: https://github.com/gotwarlost/istanbul
 [JSCS]: https://github.com/jscs-dev/node-jscs
 [Mocha]: https://mochajs.org/
-[nconf]: https://github.com/indexzero/nconf
 [Release It!]: https://github.com/webpro/release-it
 [Sinon.JS]: http://sinonjs.org/
 
@@ -35,31 +30,33 @@ npm test
 ```bash
 └─ $ tree -I 'node_modules'
 .
-├── babel                            // transpiled source code
-├── bin
-│   └── job.js                       // executable script exposed by package.json "bin" property
-├── coverage                         // line coverage reports
-├── config
-│   ├── argv.json                    // required/optional command line arguments
-│   ├── default-config.json          // default configuration options
-│   └── release.json                 // release configuration
-├── package.json                     // npm package information
+├── README.md
+├── CONTRIBUTE.md
+├── package.json
 ├── src
-│   └── job.js                       // put your business logic here
+│   └── index.js                  // <-- start coding here
+├── babel
+│   └── index.js                  // transpiled from source code
+├── config
+│   ├── release.json              // release configuration
+│   └── watch-filter-config.json
+├── coverage
+│   ├── coverage.raw.json         // JSON coverage data
+│   └── lcov-report
+│       └── index.html            // HTML coverage data
 └── test
     ├── integration
-    │   └── job.spec.js              // integration test
     ├── support
-    │   └── test-utils.js            // test configuration
+    │   ├── test-utils.js
+    │   └── watch-filter.js
     └── unit
-        ├── job.spec.js              // unit test
-        └── test-environment.spec.js // test environment validation
+        ├── index.spec.js         // <-- start testing here
+        └── test-environment.spec.js
 ```
 
 ## NPM Scripts
 
 - `npm test`: Run style enforcer, tests, and code coverage.
-- `npm start -- --key=value`: Run the CLI tool with given key/value arguments.
 - `npm run release`: Bump the `package.json` version, commit, tag, and publish.
 
 ## Contribution

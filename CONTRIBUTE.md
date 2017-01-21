@@ -4,8 +4,8 @@
 ## Setup
 
 ```bash
-git clone git@github.com:coreyferguson/generator-cliify.git
-cd generator-cliify
+git clone git@github.com:coreyferguson/generator-npm-lib.git
+cd generator-npm-lib
 npm install
 npm link
 ```

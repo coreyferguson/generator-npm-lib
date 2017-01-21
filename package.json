@@ -1,7 +1,7 @@
 {
-  "name": "generator-cliify",
-  "version": "1.0.2",
-  "description": "CLI-ify: Command line interface (CLI) Node.js application",
+  "name": "generator-npm-lib",
+  "version": "0.1.0",
+  "description": "Node.js library project skeleton.",
   "main": "generators/app/index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha test",
@@ -9,19 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:coreyferguson/generator-cliify.git"
+    "url": "git+ssh://git@github.com:coreyferguson/generator-npm-lib.git"
   },
   "files": [
     "generators/app"
   ],
   "keywords": [
     "yeoman-generator",
-    "CLI",
-    "node",
-    "nconf",
-    "winston",
-    "inquirer",
-    "nquirer",
+    "library",
     "babel",
     "es5",
     "es6"
@@ -29,9 +24,9 @@
   "author": "Corey Ferguson <corey.t.ferguson@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/coreyferguson/generator-cliify/issues"
+    "url": "https://github.com/coreyferguson/generator-npm-lib/issues"
   },
-  "homepage": "https://github.com/coreyferguson/generator-cliify#readme",
+  "homepage": "https://github.com/coreyferguson/generator-npm-lib#readme",
   "dependencies": {
     "underscore.string": "3.3.4",
     "yeoman-generator": "0.24.1"

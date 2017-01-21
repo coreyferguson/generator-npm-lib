@@ -1,8 +1,8 @@
 
 import { expect, sinon } from '../support/test-utils';
-import instance, { ExampleLibrary } from '../../src/index';
+import instance, { <%=appClassName%> } from '../../src/index';
 
-describe('ExampleLibrary unit test', function() {
+describe('<%=appClassName%> unit test', function() {
 
   const sandbox = sinon.sandbox.create();
 
@@ -11,8 +11,8 @@ describe('ExampleLibrary unit test', function() {
   });
 
   it('testing the constructor', function() {
-    expect(new ExampleLibrary()._myName).to.be.eql('world');
-    expect(new ExampleLibrary('corey')._myName).to.eql('corey');
+    expect(new <%=appClassName%>()._myName).to.be.eql('world');
+    expect(new <%=appClassName%>('corey')._myName).to.eql('corey');
   });
 
   it('using sinon', function() {

@@ -8,8 +8,8 @@ describe('app', function() {
   before(function(done) {
     helpers.run(path.join(__dirname, '../generators/app'))
       .withPrompts({
-        appName: 'cliify-test',
-        appDescription: 'Cliify test.',
+        appName: 'npm-lib-test',
+        appDescription: 'Npm Lib test.',
         authorName: 'Corey Ferguson',
         authorEmail: 'corey.t.ferguson@gmail.com'
       })
@@ -27,22 +27,17 @@ describe('app', function() {
       // root files
       'package.json',
 
-      // bin
-      'bin/job.js',
-
       // config
-      'config/argv.json',
-      'config/default-config.json',
       'config/release.json',
+      'config/watch-filter-config.json',
 
       // src
-      'src/job.js',
+      'src/index.js',
 
       // test
-      'test/unit/job.spec.js',
+      'test/unit/index.spec.js',
       'test/unit/test-environment.spec.js',
       'test/support/test-utils.js',
-      'test/integration/job.spec.js'
     ]);
   });
 
