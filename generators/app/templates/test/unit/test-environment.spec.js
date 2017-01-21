@@ -22,12 +22,7 @@ describe('test environment unit tests', function() {
     const stub = sinon.stub();
     stub();
     stub();
-    // sinon-chai allows for "to.be.calledOnce" API.
-    // If it's not properly wired with chai this function will not throw
-    // an error.
-    return expect(() => {
-      expect(stub).to.be.calledOnce;
-    }).to.throw(Error);
+    expect(stub).to.be.calledTwice;
   });
 
 });
