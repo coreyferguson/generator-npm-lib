@@ -1,11 +1,17 @@
 
 # <%= appName %>
 
-## Usage
+## Install
 
 ```bash
-npm install -g <%=npmName%>
-<%=appName%>
+npm install <%=npmName%>
+```
+
+## Usage
+
+```javascript
+var <%=appInstanceName%> = require('<%=npmName%>');
+<%=appInstanceName%>.sayHello();
 ```
 
 ## Contribution
