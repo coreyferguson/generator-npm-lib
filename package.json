@@ -1,6 +1,6 @@
 {
   "name": "generator-npm-lib",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Node.js library project skeleton.",
   "main": "generators/app/index.js",
   "scripts": {

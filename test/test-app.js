@@ -29,7 +29,7 @@ describe('app', function() {
 
       // config
       'config/release.json',
-      'config/watch-filter-config.json',
+      'config/watch-filter.js',
 
       // src
       'src/index.js',
@@ -37,7 +37,6 @@ describe('app', function() {
       // test
       'test/unit/index.spec.js',
       'test/unit/test-environment.spec.js',
-      'test/support/test-utils.js',
     ]);
   });
 
