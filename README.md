@@ -31,7 +31,7 @@ npm test
 └─ $ tree -I 'node_modules'
 .
 ├── README.md
-├── CONTRIBUTE.md
+├── CONTRIBUTING.md
 ├── package.json
 ├── src
 │   └── index.js                  // <-- start coding here
@@ -61,4 +61,4 @@ npm test
 
 ## Contribution
 
-See [CONTRIBUTE.md](CONTRIBUTE.md) for contribution details.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution details.
