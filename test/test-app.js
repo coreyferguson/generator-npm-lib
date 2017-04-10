@@ -26,6 +26,8 @@ describe('app', function() {
 
       // root files
       'package.json',
+      'README.md',
+      'CONTRIBUTING.md',
 
       // config
       'config/release.json',
@@ -35,8 +37,8 @@ describe('app', function() {
       'src/index.js',
 
       // test
-      'test/unit/index.spec.js',
-      'test/unit/test-environment.spec.js',
+      'test/spec/index.unit.js',
+      'test/spec/test-environment.js',
     ]);
   });
 
