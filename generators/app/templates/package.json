@@ -5,9 +5,6 @@
   "license": "MIT",
   "author": "<%= authorName %> <<%= authorEmail %>>",
   "main": "babel/index.js",
-  "bin": {
-    "<%= appName %>": "./bin/job.js"
-  },
   "scripts": {
     "babel": "./node_modules/.bin/babel src --out-dir babel --source-maps inline",
     "istanbul": "./node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- --recursive --compilers js:babel-register test/spec",
